@@ -1,0 +1,45 @@
+i = 1
+while(i!=10):
+    import random
+    print("Your Option are:\n","a:snake\n","b:water\n","c=gun\n")
+    x=input("Put your choice here:")
+    a="snake"
+    b="water"
+    c="gun"
+    if x=='a':
+        print("Your selected option is:","Snake")
+        s=random.choice((a,b,c))
+        print("RANDOM OPTION IS:", s)
+        if s=="gun":
+            print("Your result is: you loose")
+        elif s=="water":
+            print("Your result is: you loose")
+        elif s=="snake":
+            print("Your result is:same")
+    elif x=='b':
+        print("Your selected option is:", "Water")
+        t = random.choice((a, b, c))
+        print("RANDOM OPTION IS:", t)
+        if t== "gun":
+            print("Your result is: you loose")
+        elif t == "water":
+            print("Your result is:Same")
+        elif t == "snake":
+            print("Your result is: you win")
+    elif x=='c':
+        print("Your selected option is:", "Gun")
+        g = random.choice((a, b, c))
+        print("RANDOM OPTION IS:",g)
+        if g== "gun":
+            print("Your result is: same")
+        elif g == "water":
+            print("Your result is: You loose")
+        elif t == "snake":
+            print("Your result is: You win")
+    i=i+1
+
+
+
+
+
+
